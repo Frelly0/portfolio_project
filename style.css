@@ -1,82 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=IBM+Plex+Mono:wght@500&family=Lato:wght@300&family=Poppins:wght@300&family=Roboto:ital,wght@1,300&display=swap');
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
-.container {
-    background-color: #fff;
-    font-family: 'Poppins';
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 .header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2% 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2% 10%;
 }
 
 .content {
-    position: fixed;
-    background-image: url(./image/Header.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
+  position: fixed;
+  background-image: url(./image/Header.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
 }
 
 .sub-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 12px;
-    position: absolute;
-    width: 920px;
-    height: 268px;
-    left: 30px;
-    right: 30px;
-    top: calc(40% - 30px/2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  position: absolute;
+  width: 920px;
+  height: 268px;
+  left: 30px;
+  right: 30px;
+  top: calc(40% - 30px);
 }
 
 .sub-content h1 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 52px;
-    color: #172B4D;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 52px;
+  color: #172b4d;
 }
 
 .sub-content p {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #344563;
-} 
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
 
 .sub-content h4 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7F8CFF;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
 }
 
 .sub-content .icons {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
-
-/* 
-@media screen and (min-width: 480px) {
-   
-} */
-
