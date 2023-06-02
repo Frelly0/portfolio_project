@@ -61,6 +61,14 @@ body {
   flex-grow: 0;
 }
 
+main section h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
 .primary h1 {
   width: 295px;
   height: 36px;
@@ -84,6 +92,14 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+main section p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .frame p {
@@ -254,6 +270,14 @@ body {
   flex-grow: 0;
 }
 
+main section h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
 .social h4 {
   font-style: normal;
   font-weight: 500;
@@ -263,6 +287,11 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+main section ul {
+  display: flex;
+  gap: 15px;
 }
 
 .social ul {
@@ -471,33 +500,4 @@ main section {
   display: flex;
   padding-top: 9px;
   margin-left: 30px;
-}
-
-main section h1 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 52px;
-  color: #172b4d;
-}
-
-main section p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-}
-
-main section h4 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-}
-
-main section ul {
-  display: flex;
-  gap: 15px;
 }
