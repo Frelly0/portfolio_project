@@ -27,7 +27,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-  <img src="img.jpeg" alt="logo" width="140"  height="auto" />
+  <img src="image/img.jpeg" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>PORTFOLIO</b></h3>
