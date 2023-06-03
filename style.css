@@ -13,9 +13,12 @@ body {
 }
 
 .works {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: auto;
+  gap: 50px;
   background-color: #f7f7f9;
   padding: 70px 25px;
-  column-gap: 10px;
   margin-bottom: 20px;
 }
 
@@ -199,6 +202,12 @@ main section ul {
   top: calc(78% - 48px);
   border: 1px solid #6070ff;
   border-radius: 8px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.card .action .btn:hover {
+  background-color: #8300ff;
 }
 
 .top .btn p {
@@ -216,9 +225,14 @@ main section ul {
 }
 
 .card .action .btn p {
-  color: #6070ff;
-  font-weight: 400;
+  color: #8300ff;
+  font-weight: 550;
   font-size: 17px;
+  transition: 0.5s ease;
+}
+
+.card .action .btn p:hover {
+  color: #fff;
 }
 
 .card #img2 {
