@@ -10,6 +10,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f9;
 }
 
 .main-bar nav {
@@ -54,10 +55,12 @@ nav ul li a:hover {
 }
 
 main {
+  display: flex;
+  background-color: #fff;
   background-image: url(./image/backgroundimg.png);
   background-position: center;
   background-size: cover;
-  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 5rem;
 }
 
 .main-bar main .sub-main {
@@ -208,6 +211,7 @@ main section p {
   flex-direction: column;
   grid-template-columns: auto;
   justify-content: center;
+  width: 100%;
   gap: 50px;
   background-color: #f7f7f9;
   padding: 70px 25px;
@@ -218,7 +222,7 @@ main section p {
   flex-direction: row;
   padding: 16px;
   gap: 12px;
-  width: 650px;
+  width: 1000px;
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -237,9 +241,12 @@ main section p {
 }
 
 .card #img1 {
-  width: 295px;
+  width: 600px;
   height: 220px;
-  background: url(./image/one);
+  background-image: url(./image/one);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 8px;
 }
 
@@ -247,9 +254,9 @@ main section p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 295px;
+  width: 600px;
   height: 200px;
-  margin-left: 10px;
+  margin: 10px 10px;
 }
 
 .primary {
@@ -289,11 +296,11 @@ main section p {
 }
 
 .card .text {
-  width: 295px;
+  width: 450px;
   height: 50px;
   font-style: normal;
   font-weight: 400;
-  font-size: 8px;
+  font-size: 12px;
   color: #344563;
 }
 
@@ -306,9 +313,9 @@ main section ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 214px;
+  width: 274px;
   height: 24px;
-  gap: 10px;
+  gap: 16px;
 }
 
 .card .action {
@@ -367,30 +374,33 @@ main section ul {
 }
 
 .card #img2 {
-  width: 295px;
+  width: 600px;
   height: 220px;
-  background: url(./image/multi-post.png);
+  background-image: url(./image/two.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 8px;
 }
 
 .card #img3 {
-  width: 295px;
+  width: 600px;
   height: 220px;
-  background: url(./image/toxic.png);
+  background-image: url(./image/three.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 8px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .card #img4 {
-  width: 295px;
+  width: 600px;
   height: 220px;
-  background: url(./image/stories.png);
+  background-image: url(./image/four.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 8px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .about {
@@ -399,11 +409,13 @@ main section ul {
   justify-content: center;
   padding-left: 200px;
   padding-right: 200px;
+  padding-top: 150px;
+  background-color: #fff;
   gap: 24px;
   width: 100%;
   height: 100vh;
-  margin-top: 140px;
   line-height: 1.5;
+  border-top-right-radius: 5rem;
 }
 
 .social {
@@ -438,15 +450,15 @@ main section h4 {
   flex-direction: row;
   align-items: center;
   height: 40px;
+  float: left;
 }
 
 .social ul li {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 8px;
-  width: 40px;
-  height: 40px;
+  padding: 5px;
+  font-size: 55px;
   border-radius: 8px;
 }
 
@@ -497,7 +509,7 @@ main section h4 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-top-left-radius: 7rem;
+  border-top-left-radius: 5rem;
 }
 
 .contact .sub-contact {
@@ -556,7 +568,7 @@ input[type=submit]:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 5rem;
   }
 
   .main-bar main .sub-main {
