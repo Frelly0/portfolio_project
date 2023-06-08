@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px 90px auto 90px;
+  margin: 20px 110px auto 110px;
 }
 
 nav h1 {
@@ -540,4 +540,83 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #396df2;
   color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-bar nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 50px auto 50px;
+  }
+
+  main {
+    display: flex;
+    background-image: url(./image/backgroundimg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 20%;
+  }
+
+  .main-bar main .sub-main {
+    display: flex;
+    flex-direction: column;
+    padding: 190px 100px 160px 100px;
+    line-height: 0.37;
+  }
+
+  .about .left h1 {
+    font-size: 20px;
+  }
+
+  .main-bar main .sub-main h1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.35px;
+  }
+
+  .about .left p {
+    font-size: 15px;
+    justify-content: flex-start;
+  }
+
+  .main-bar main .sub-main p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #344563;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    gap: 12px;
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+  }
+
+  .works #one,
+  .works #two,
+  .works #three,
+  .works #four {
+    width: 600px;
+  }
+
+  .card #sub-left-blocks {
+    width: 265px;
+  }
+
+  .card #sub-left-block {
+    width: 260px;
+  }
+
+  .about {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
