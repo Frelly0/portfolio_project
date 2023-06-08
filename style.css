@@ -10,7 +10,12 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f7f7f9;
+  background-color: #fff;
+}
+
+.main-bar {
+  background-color: #fff;
+  margin-top: 0%;
 }
 
 .main-bar nav {
@@ -566,7 +571,7 @@ input[type=submit]:hover {
     display: flex;
     background-image: url(./image/backgroundimg.png);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     border-bottom-left-radius: 5rem;
   }
@@ -574,8 +579,8 @@ input[type=submit]:hover {
   .main-bar main .sub-main {
     display: flex;
     flex-direction: column;
-    padding: 190px 100px 160px 100px;
-    line-height: 0.37;
+    padding: 80px 100px 160px 100px;
+    line-height: 0;
   }
 
   .about .left h1 {
@@ -612,19 +617,30 @@ input[type=submit]:hover {
     border-radius: 16px;
   }
 
+  .card #img1,
+  .card #img2,
+  .card #img3,
+  .card #img4 {
+    width: 259px;
+    height: 220px;
+  }
+
+  .card #sub-left-block {
+    width: 249px;
+    height: 200px;
+  }
+
+  .card .text {
+    width: 270px;
+    height: 50px;
+    font-size: 9px;
+  }
+
   .works #one,
   .works #two,
   .works #three,
   .works #four {
     width: 600px;
-  }
-
-  .card #sub-left-blocks {
-    width: 265px;
-  }
-
-  .card #sub-left-block {
-    width: 260px;
   }
 
   .about {
