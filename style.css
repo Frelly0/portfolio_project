@@ -647,4 +647,10 @@ input[type=submit]:hover {
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  .contact {
+    background-image: url(./image/backgroundimg.png);
+    background-size: contain;
+    background-position: center;
+  }
 }
