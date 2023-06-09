@@ -25,6 +25,16 @@ body {
   margin: 20px 110px auto 110px;
 }
 
+nav img #humb {
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+
+.main-bar nav #humb {
+  display: none;
+}
+
 nav h1 {
   color: #6070ff;
   font-weight: 700;
@@ -64,14 +74,14 @@ main {
   background-color: #fff;
   background-image: url(./image/backgroundimg.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   border-bottom-left-radius: 5rem;
 }
 
 .main-bar main .sub-main {
   display: flex;
   flex-direction: column;
-  padding: 190px 180px 160px 180px;
+  padding: 190px 150px 160px 150px;
   line-height: 1.8;
 }
 
@@ -219,15 +229,14 @@ main section p {
   width: 100%;
   gap: 50px;
   background-color: #f7f7f9;
-  padding: 70px 25px;
+  padding: 190px 110px 160px 110px;
 }
 
 .card {
   display: flex;
   flex-direction: row;
-  padding: 16px;
   gap: 12px;
-  width: 1000px;
+  width: 950px;
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -470,8 +479,6 @@ main section h4 {
 .skill {
   display: flex;
   flex-direction: column;
-  width: 327px;
-  height: 35px;
 }
 
 .skill .frame1 .sub-flame {
@@ -484,12 +491,16 @@ main section h4 {
 .skill .frame1 .language {
   display: flex;
   flex-direction: row;
-  background-color: #f7f7f9;
-  padding: 10px;
   align-items: center;
   border-radius: 8px;
-  gap: 20px;
+  gap: 10px;
   width: 250px;
+}
+
+.language .sub-flame1 {
+  background-color: #f7f7f9;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 .language .sub-flame1 img {
@@ -559,12 +570,20 @@ input[type=submit]:hover {
   color: #fff;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1000px) {
   .main-bar nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 20px 50px auto 50px;
+  }
+
+  .main-bar nav ul {
+    display: none;
+  }
+
+  .main-bar nav #humb {
+    display: flex;
   }
 
   main {
@@ -589,8 +608,8 @@ input[type=submit]:hover {
 
   .main-bar main .sub-main h1 {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 30px;
+    line-height: 1.2;
     letter-spacing: 0.35px;
   }
 
@@ -600,10 +619,8 @@ input[type=submit]:hover {
   }
 
   .main-bar main .sub-main p {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    color: #344563;
+    font-size: 20px;
+    line-height: 1.5;
   }
 
   .works {
@@ -626,26 +643,26 @@ input[type=submit]:hover {
   .card #img2,
   .card #img3,
   .card #img4 {
-    width: 259px;
+    width: 299px;
     height: 220px;
   }
 
   .card #sub-left-block {
-    width: 249px;
+    width: 349px;
     height: 200px;
   }
 
   .card .text {
-    width: 270px;
+    width: 340px;
     height: 50px;
-    font-size: 9px;
+    font-size: 11px;
   }
 
   .works #one,
   .works #two,
   .works #three,
   .works #four {
-    width: 37.5rem;
+    width: 40.5rem;
   }
 
   .about {
@@ -657,5 +674,154 @@ input[type=submit]:hover {
     background-image: url(./image/backgroundimg.png);
     background-size: contain;
     background-position: center;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .main-bar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 1rem 1.5rem;
+  }
+
+  .main-bar main .sub-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 10;
+    padding: 6rem 1.5rem;
+  }
+
+  .main-bar nav #humb {
+    display: flex;
+  }
+
+  .works {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 0.6rem;
+    justify-content: center;
+    margin: 3.125rem 1.5rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 1rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(223, 225, 230);
+    border-image: initial;
+    width: 700px;
+    margin-left: 142px;
+    margin-right: 142px;
+  }
+
+  .card #img1,
+  .card #img2,
+  .card #img3,
+  .card #img4 {
+    width: 100%;
+  }
+
+  .card .text {
+    width: 250px;
+    height: 50px;
+    font-size: 9px;
+  }
+
+  .card #sub-left-block {
+    width: 260px;
+    height: 200px;
+  }
+
+  .works #one,
+  .works #two,
+  .works #three,
+  .works #four {
+    display: flex;
+    flex-direction: column;
+    width: 19rem;
+    margin: 3.125rem 1.5rem;
+  }
+
+  .about {
+    border-top-right-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7.125rem 1.5rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about .left h1 {
+    font-size: 40px;
+  }
+
+  .about .skill ul {
+    display: block;
+    margin: 6px;
+    padding: 24px;
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+  }
+
+  .skill .frame1 .language {
+    display: block;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    border-radius: 8px;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .language .sub-flame1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 8px;
+    margin: 12px;
+    padding: 9px 12px;
+  }
+
+  .contact::before {
+    content: "";
+    position: relative;
+    background-color: rgb(96, 112, 255);
+    background-image: url(./image/header-shapes-mobile.png);
+    background-size: contain;
+    border-top-left-radius: 5rem;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .contact {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.4375rem 1.5rem;
+    margin-top: 450px;
+  }
+
+  .contact .sub-contact p {
+    color: rgb(235, 235, 255);
+    text-align: center;
+    margin: 0.8rem 2.8rem;
+    font-weight: 550;
+    line-height: 18px;
+    font-size: 20px;
   }
 }
