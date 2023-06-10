@@ -219,6 +219,21 @@ main section p {
   font-size: 20px;
   line-height: 28px;
   color: #344563;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .works {
@@ -562,10 +577,11 @@ input[type=submit] {
   color: #6070ff;
   font-size: 12px;
   font-weight: 400;
-  transition: 0.5s ease;
+  transition: all 0.5s ease-out;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover,
+input[type=submit]:focus {
   background-color: #396df2;
   color: #fff;
 }
