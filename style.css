@@ -147,9 +147,6 @@ main section ul {
 }
 
 .card ul {
-  /* display: flex;
-  flex-direction: row;
-  align-items: center; */
   width: 214px;
   height: 24px;
   gap: 10px;
