@@ -155,6 +155,9 @@ main section ul {
   gap: 10px;
   float: right;
 }
+.card ul li{
+  float: right;
+}
 
 .card ul a {
   background-color: #ebebff;
