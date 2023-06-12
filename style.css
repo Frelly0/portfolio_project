@@ -154,7 +154,8 @@ main section ul {
 }
 .card ul li {
   float: right;
-  margin-right: 5px;
+  margin-left: 5px;
+  padding-left: 5px;
 }
 
 .card ul a {
