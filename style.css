@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=IBM+Plex+Mono:wght@500&family=Lato:wght@300&family=Poppins:wght@300&family=Roboto:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=IBM+Plex+Mono:wght@500&family=Lato:wght@300&family=Poppins:wght@300&family=Roboto:ital,wght@1,300&display=swap");
 
 * {
   box-sizing: border-box;
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .works {
@@ -147,12 +147,21 @@ main section ul {
 }
 
 .card ul {
-  display: flex;
+  /* float: right;
+  background-color: #7a869a;
+  width: 214px;
+  height: 24px; */
+  /* display: flex;
   flex-direction: row;
   align-items: center;
   width: 214px;
   height: 24px;
-  gap: 10px;
+  gap: 10px; */
+}
+
+.card ul li {
+  float: right;
+  margin-left: 5px;
 }
 
 .card ul a {
@@ -416,9 +425,9 @@ form {
   margin-bottom: 20px;
 }
 
-form input[type=text],
-input[type=email],
-textarea[type=area] {
+form input[type="text"],
+input[type="email"],
+textarea[type="area"] {
   border-radius: 5px;
   padding: 15px;
   border: none;
@@ -426,7 +435,7 @@ textarea[type=area] {
   color: #8300ff;
 }
 
-input[type=submit] {
+input[type="submit"] {
   border-radius: 5px;
   padding: 15px;
   border: none;
@@ -438,7 +447,7 @@ input[type=submit] {
   transition: 0.5s ease;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #396df2;
   color: #fff;
 }
