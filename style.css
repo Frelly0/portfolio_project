@@ -150,7 +150,7 @@ main section ul {
   width: 214px;
   height: 24px;
   gap: 10px;
-  float: right;
+  /* float: right; */
 }
 .card ul li {
   float: right;
