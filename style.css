@@ -191,7 +191,7 @@ main section ul {
   color: #344563;
 }
 
-/* .contact p {
+.contact p {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -199,7 +199,7 @@ main section ul {
   text-align: center;
   color: #ebebff;
   margin-bottom: 25px;
-} */
+} 
 
 .card .action .btn {
   display: flex;
