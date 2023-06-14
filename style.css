@@ -360,11 +360,6 @@ header section ul {
   cursor: pointer;
 }
 
-.about .left .btn:hover {
-  background-color: #8300ff;
-  color: white;
-}
-
 .card .action .btn {
   display: flex;
   flex-direction: row;
@@ -377,6 +372,11 @@ header section ul {
   border-radius: 8px;
   transition: 0.5s ease;
   cursor: pointer;
+}
+
+.about .left .btn:hover {
+  background-color: #8300ff;
+  color: white;
 }
 
 .card .action .btn:hover {
