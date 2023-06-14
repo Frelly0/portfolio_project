@@ -10,50 +10,55 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
 }
 
-.main-bar {
-  background-color: #fff;
-  margin-top: 0%;
+.container {
+  background: #f7f7f9;
+  position: relative;
 }
 
-.main-bar nav {
+.top-menu {
+  background: #fff;
+}
+
+.top-menu .sub-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 10px 110px auto 110px;
+  padding: 1.5rem 1rem;
 }
 
-nav img #humb {
+.sub-menu #humb {
   display: none;
   width: 20px;
   height: 20px;
 }
 
-.main-bar nav #humb {
-  display: none;
+header section h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 20px;
+  color: #172b4d;
 }
 
-nav h1 {
+.sub-menu h1 {
   color: #6070ff;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 18px;
   line-height: 20px;
 }
 
-nav ul {
+header section ul {
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 
-nav ul li a {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #344563;
-  transition: 0.5s ease;
+.sub-menu ul {
+  display: flex;
+  gap: 20px;
 }
 
 .card ul a {
@@ -65,7 +70,16 @@ nav ul li a {
   font-size: 8px;
 }
 
-nav ul li a:hover {
+.sub-menu ul li a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+  transition: 0.5s ease;
+}
+
+.sub-menu ul li a:hover {
   border-bottom: 0.5px solid #172b4d;
 }
 
@@ -83,14 +97,6 @@ header {
   flex-direction: column;
   padding: 190px 150px 160px 150px;
   line-height: 1.8;
-}
-
-header section h1 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 20px;
-  color: #172b4d;
 }
 
 .primary h1 {
@@ -116,7 +122,7 @@ header section h1 {
 
 .about .left h2 {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 38px;
   line-height: 52px;
   display: flex;
   align-items: center;
@@ -237,6 +243,7 @@ header section p {
   flex-direction: row;
   gap: 12px;
   width: 950px;
+  padding: 20px;
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -248,6 +255,30 @@ header section p {
   padding: auto 70px auto 70px;
 }
 
+.works #three {
+  display: flex;
+  border: 1.8px solid #a7aeff;
+}
+
+.works .action #buto {
+  background-color: #4053fc;
+}
+
+.card .action .btn p {
+  color: #8300ff;
+  font-weight: 500;
+  font-size: 12px;
+  transition: 0.5s ease;
+}
+
+.card .action .btn p:hover {
+  color: #fff;
+}
+
+.works .action #buto p {
+  color: #fff;
+}
+
 .works #two,
 .works #four {
   display: flex;
@@ -256,7 +287,7 @@ header section p {
 
 .card #img1 {
   width: 600px;
-  height: 220px;
+  height: 320px;
   background-image: url(./image/one.png);
   background-position: center;
   background-size: cover;
@@ -271,6 +302,7 @@ header section p {
   width: 600px;
   height: 200px;
   margin: 10px 10px;
+  line-height: 1.6;
 }
 
 .primary {
@@ -316,11 +348,7 @@ header section p {
   font-weight: 400;
   font-size: 12px;
   color: #344563;
-}
-
-header section ul {
-  display: flex;
-  gap: 15px;
+  margin-top: 5px;
 }
 
 .card ul {
@@ -352,10 +380,10 @@ header section ul {
 .about .left .btn {
   color: #396df2;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 12px;
   border: 0.5px solid #396df2;
-  padding: 15px;
-  width: 150px;
+  padding: 10px;
+  width: 110px;
   transition: 0.5s ease;
   cursor: pointer;
 }
@@ -369,7 +397,7 @@ header section ul {
   gap: 10px;
   margin-top: 15px;
   border: 1px solid #6070ff;
-  border-radius: 8px;
+  border-radius: 5px;
   transition: 0.5s ease;
   cursor: pointer;
 }
@@ -383,20 +411,9 @@ header section ul {
   background-color: #8300ff;
 }
 
-.card .action .btn p {
-  color: #8300ff;
-  font-weight: 500;
-  font-size: 12px;
-  transition: 0.5s ease;
-}
-
-.card .action .btn p:hover {
-  color: #fff;
-}
-
 .card #img2 {
   width: 600px;
-  height: 220px;
+  height: 320px;
   background-image: url(./image/two.png);
   background-position: center;
   background-size: cover;
@@ -406,7 +423,7 @@ header section ul {
 
 .card #img3 {
   width: 600px;
-  height: 220px;
+  height: 320px;
   background-image: url(./image/three.png);
   background-position: center;
   background-size: cover;
@@ -416,7 +433,7 @@ header section ul {
 
 .card #img4 {
   width: 600px;
-  height: 220px;
+  height: 320px;
   background-image: url(./image/four.png);
   background-position: center;
   background-size: cover;
@@ -445,6 +462,7 @@ header section ul {
   align-items: flex-start;
   width: 200px;
   height: 80px;
+  margin-top: 7px;
 }
 
 header section h4 {
@@ -588,18 +606,18 @@ input[type=submit]:focus {
 }
 
 @media only screen and (max-width: 1000px) {
-  .main-bar nav {
+  .top-menu .sub-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px 50px auto 50px;
+    margin: 10px 50px auto 50px;
   }
 
-  .main-bar nav ul {
+  .sub-menu ul {
     display: none;
   }
 
-  .main-bar nav #humb {
+  .sub-menu #humb {
     display: flex;
   }
 
@@ -701,6 +719,14 @@ input[type=submit]:focus {
     justify-content: space-between;
     position: relative;
     margin: 1rem 1.5rem;
+  }
+
+  .top-menu .sub-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto auto auto;
+    padding: 1.5rem 1rem;
   }
 
   .main-bar header .sub-main {
