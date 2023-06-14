@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 
 .main-bar {
@@ -22,7 +22,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px 110px auto 110px;
+  margin: 10px 110px auto 110px;
 }
 
 nav img #humb {
@@ -69,7 +69,7 @@ nav ul li a:hover {
   border-bottom: 0.5px solid #172b4d;
 }
 
-main {
+header {
   display: flex;
   background-color: #fff;
   background-image: url(./image/backgroundimg.png);
@@ -78,14 +78,14 @@ main {
   border-bottom-left-radius: 5rem;
 }
 
-.main-bar main .sub-main {
+.main-bar header .sub-main {
   display: flex;
   flex-direction: column;
   padding: 190px 150px 160px 150px;
   line-height: 1.8;
 }
 
-main section h1 {
+header section h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -114,9 +114,9 @@ main section h1 {
   padding-bottom: 55px;
 }
 
-.about .left h1 {
+.about .left h2 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 25px;
   line-height: 52px;
   display: flex;
   align-items: center;
@@ -133,7 +133,7 @@ main section h1 {
   margin-bottom: 15px;
 }
 
-.main-bar main .sub-main h1 {
+.main-bar header .sub-main h1 {
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
@@ -143,7 +143,7 @@ main section h1 {
   color: #091e42;
 }
 
-main section p {
+header section p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -199,8 +199,8 @@ main section p {
 .about .left p {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 13px;
+  line-height: 15px;
   color: #344563;
 }
 
@@ -214,7 +214,7 @@ main section p {
   text-align: center;
 }
 
-.main-bar main .sub-main p {
+.main-bar header .sub-main p {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -257,7 +257,7 @@ main section p {
 .card #img1 {
   width: 600px;
   height: 220px;
-  background-image: url(./image/one);
+  background-image: url(./image/one.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -318,7 +318,7 @@ main section p {
   color: #344563;
 }
 
-main section ul {
+header section ul {
   display: flex;
   gap: 15px;
 }
@@ -355,7 +355,14 @@ main section ul {
   font-size: 15px;
   border: 0.5px solid #396df2;
   padding: 15px;
+  width: 150px;
+  transition: 0.5s ease;
   cursor: pointer;
+}
+
+.about .left .btn:hover {
+  background-color: #8300ff;
+  color: white;
 }
 
 .card .action .btn {
@@ -421,13 +428,13 @@ main section ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-top: 150px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
   background-color: #fff;
   gap: 24px;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   line-height: 1.5;
   border-top-right-radius: 5rem;
 }
@@ -440,7 +447,7 @@ main section ul {
   height: 80px;
 }
 
-main section h4 {
+header section h4 {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -479,6 +486,13 @@ main section h4 {
 .skill {
   display: flex;
   flex-direction: column;
+  width: 60%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
 }
 
 .skill .frame1 .sub-flame {
@@ -522,7 +536,7 @@ main section h4 {
   padding-top: 100px;
   background: #7b86eb;
   background-image: url(./image/backgroundimg.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   border-top-left-radius: 5rem;
@@ -541,6 +555,7 @@ main section h4 {
   flex-direction: column;
   padding: 18px;
   margin-bottom: 20px;
+  align-items: center;
 }
 
 .contact form input[type=text],
@@ -549,6 +564,7 @@ textarea[type=area] {
   border-radius: 5px;
   padding: 15px;
   border: none;
+  width: 100%;
   margin: 7px;
   color: #8300ff;
 }
@@ -587,7 +603,7 @@ input[type=submit]:focus {
     display: flex;
   }
 
-  main {
+  header {
     display: flex;
     background-image: url(./image/backgroundimg.png);
     background-position: center;
@@ -596,7 +612,7 @@ input[type=submit]:focus {
     border-bottom-left-radius: 5rem;
   }
 
-  .main-bar main .sub-main {
+  .main-bar header .sub-main {
     display: flex;
     flex-direction: column;
     padding: 80px 100px 160px 100px;
@@ -607,7 +623,7 @@ input[type=submit]:focus {
     font-size: 20px;
   }
 
-  .main-bar main .sub-main h1 {
+  .main-bar header .sub-main h1 {
     font-weight: 700;
     font-size: 30px;
     line-height: 1.2;
@@ -619,7 +635,7 @@ input[type=submit]:focus {
     justify-content: flex-start;
   }
 
-  .main-bar main .sub-main p {
+  .main-bar header .sub-main p {
     font-size: 20px;
     line-height: 1.5;
   }
@@ -687,7 +703,7 @@ input[type=submit]:focus {
     margin: 1rem 1.5rem;
   }
 
-  .main-bar main .sub-main {
+  .main-bar header .sub-main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -773,6 +789,13 @@ input[type=submit]:focus {
     display: flex;
     flex-direction: column;
     height: 35px;
+    width: 100%;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   .skill .frame1 .language {
