@@ -49,6 +49,13 @@ header section h1 {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {
+    transform: rotate(360deg);
+  }
 }
 
 header section ul {
@@ -76,11 +83,14 @@ header section ul {
   font-size: 15px;
   line-height: 20px;
   color: #344563;
-  transition: 0.5s ease;
+  transition: all 1s ease-out;
 }
 
 .sub-menu ul li a:hover {
-  border-bottom: 0.5px solid #172b4d;
+  font-size: 20px;
+  border-bottom: 0.5px solid #0b42a1;
+  color: blue;
+  font-weight: bold;
 }
 
 header {
