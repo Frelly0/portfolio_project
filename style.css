@@ -28,12 +28,7 @@ body {
   justify-content: space-between;
   margin: 10px 110px auto 110px;
   padding: 1.5rem 1rem;
-}
-
-.sub-menu #humb {
-  display: none;
-  width: 20px;
-  height: 20px;
+  z-index: 2;
 }
 
 header section h1 {
@@ -45,9 +40,9 @@ header section h1 {
 }
 
 .sub-menu h1 {
-  color: #6070ff;
+  color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 21px;
   animation: mymove 5s infinite;
 }
@@ -79,18 +74,26 @@ header section ul {
 
 .sub-menu ul li a {
   font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: bold;
   line-height: 20px;
-  color: #344563;
+  color: white;
+  font-size: 24px;
   transition: all 1s ease-out;
 }
 
-.sub-menu ul li a:hover {
-  font-size: 20px;
-  border-bottom: 0.5px solid #0b42a1;
-  color: blue;
-  font-weight: bold;
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 
 header {
@@ -621,14 +624,7 @@ input[type="submit"]:focus {
     flex-direction: row;
     justify-content: space-between;
     margin: 10px 50px auto 50px;
-  }
-
-  .sub-menu ul {
-    display: none;
-  }
-
-  .sub-menu #humb {
-    display: flex;
+    z-index: 10;
   }
 
   header {
@@ -735,8 +731,49 @@ input[type="submit"]:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: rgb(96, 112, 255, 0.8);
     margin: 10px auto auto auto;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
+    z-index: 10;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .sub-menu .navs-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    padding-bottom: 460px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(96, 112, 255, 0.8);
+    backdrop-filter: blur(7px);
+    width: 100%;
+    padding-left: 20px;
+    transition: 0.3s;
+    z-index: 10000;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .navs-menu.active {
+    left: 0;
   }
 
   .main-bar header .sub-main {
@@ -746,10 +783,6 @@ input[type="submit"]:focus {
     position: relative;
     z-index: 10;
     padding: 6rem 1.5rem;
-  }
-
-  .main-bar nav #humb {
-    display: flex;
   }
 
   .works {

@@ -11,13 +11,20 @@
     <div class="container">
       <nav class="top-menu">
         <div class="sub-menu">
+          
           <h1>My-Frelly</h1>
-          <ul>
-            <li id="down"><a href="#">Portfolio</a></li>
-            <li id="down"><a href="#">About</a></li>
-            <li id="down"><a href="#">Contact</a></li>
+
+          <ul class="navs-menu">
+            <li id="down" class="nav-item"><a href="#portfolio" class="nav-links">Portfolio</a></li>
+            <li id="down" class="nav-item"><a href="#about" class="nav-links">About</a></li>
+            <li id="down" class="nav-item"><a href="#contact" class="nav-links">Contact</a></li>
           </ul>
-          <img src="./image/hamburguer1111.png" alt="humber" id="humb">
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
       </nav>
       <section class="main-bar">
@@ -57,7 +64,7 @@
       </header>
     </section>
 
-    <section class="works">
+    <section class="works" id="portfolio">
       <nav class="card" id="one">
         <div id="img1"></div>
         <div class="left-bloks" id="sub-left-block">
@@ -174,7 +181,7 @@
       </nav>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="left">
         <h2>
           About Myself
@@ -249,7 +256,7 @@
       </div>
     </section>
     </div>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="sub-contact">
         <h1>Contact me</h1>
       <p>
@@ -287,8 +294,8 @@
         <input type="submit" value="Get in touch" />
       </form>
       </div>
-      
     </section>
 
+    <script src="./script.js"></script>
   </body>
 </html>
