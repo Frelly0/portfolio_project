@@ -6,20 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
     <link rel="stylesheet" href="./style.css" />
+    
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  />
   </head>
   <body>
     <div class="container">
-      <nav class="top-menu">
+      <!-- <nav class="top-menu">
         <div class="sub-menu">
+          
           <h1>My-Frelly</h1>
-          <ul>
-            <li id="down"><a href="#">Portfolio</a></li>
-            <li id="down"><a href="#">About</a></li>
-            <li id="down"><a href="#">Contact</a></li>
+
+          <ul class="navs-menu">
+            <li id="down" class="nav-item"><a href="#portfolio" class="nav-links">Portfolio</a></li>
+            <li id="down" class="nav-item"><a href="#about" class="nav-links">About</a></li>
+            <li id="down" class="nav-item"><a href="#contact" class="nav-links">Contact</a></li>
           </ul>
-          <img src="./image/hamburguer1111.png" alt="humber" id="humb">
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav> -->
+
+      <nav class="nav">
+        <a href="#" class="logo"> My Logo </a>
+        <nav class="logo-button">
+          <img id="nav-button" class="mobile" src="./image/Union.png" alt="logo" width="18px" height="12px"/>
+        </nav>
+        <div class="desktop">
+          <ul class="header-content">
+            <li class="head-words close mobilee">
+              <span class="material-symbols-outlined"> close </span>
+            </li>
+            <li class="head-words"><a class="links" href="#portfolio">Portfolio</a></li>
+            <li class="head-words"><a class="links" href="#about">About</a></li>
+            <li class="head-words"><a class="links" href="#contact">Contact</a></li>
+          </ul>
         </div>
       </nav>
+
+
+
+
+
       <section class="main-bar">
       <header>
         <div class="sub-main">
@@ -57,7 +91,7 @@
       </header>
     </section>
 
-    <section class="works">
+    <section class="works" id="portfolio">
       <nav class="card" id="one">
         <div id="img1"></div>
         <div class="left-bloks" id="sub-left-block">
@@ -174,7 +208,7 @@
       </nav>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="left">
         <h2>
           About Myself
@@ -249,7 +283,7 @@
       </div>
     </section>
     </div>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="sub-contact">
         <h1>Contact me</h1>
       <p>
@@ -287,8 +321,8 @@
         <input type="submit" value="Get in touch" />
       </form>
       </div>
-      
     </section>
 
+    <script src="./script.js"></script>
   </body>
 </html>
