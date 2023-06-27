@@ -1,12 +1,16 @@
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.navs-menu');
-
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navMenu.classList.toggle('active');
+const closeButton = document.querySelector('.close');
+closeButton.addEventListener('click', () => {
+  document.querySelector('.desktop').classList.toggle('show');
 });
 
-document.querySelectorAll('.nav-links').forEach(n => n.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  navMenu.classList.remove('active');
-}));
+const navButton = document.querySelector('#nav-button');
+navButton.addEventListener('click', () => {
+  document.querySelector('.desktop').classList.toggle('show');
+});
+
+const linkButtons = document.querySelectorAll('.links');
+linkButtons.forEach((linkButton) => {
+  linkButton.addEventListener('click', () => {
+    document.querySelector('.desktop').classList.toggle('show');
+  });
+});
