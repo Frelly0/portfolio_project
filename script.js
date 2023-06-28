@@ -14,3 +14,7 @@ linkButtons.forEach((linkButton) => {
     document.querySelector('.desktop').classList.toggle('show');
   });
 });
+
+function togglePopup() {
+  document.getElementById("popup-1").classList.toggle("active");
+}

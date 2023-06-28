@@ -6,33 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
     <link rel="stylesheet" href="./style.css" />
-    
-    <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-  />
+    <link rel="stylesheet" href="./pop-up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
   </head>
   <body>
     <div class="container">
-      <!-- <nav class="top-menu">
-        <div class="sub-menu">
-          
-          <h1>My-Frelly</h1>
-
-          <ul class="navs-menu">
-            <li id="down" class="nav-item"><a href="#portfolio" class="nav-links">Portfolio</a></li>
-            <li id="down" class="nav-item"><a href="#about" class="nav-links">About</a></li>
-            <li id="down" class="nav-item"><a href="#contact" class="nav-links">Contact</a></li>
-          </ul>
-
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </div>
-      </nav> -->
-
+ 
       <nav class="nav">
         <a href="#" class="logo"> My Logo </a>
         <nav class="logo-button">
@@ -49,10 +29,6 @@
           </ul>
         </div>
       </nav>
-
-
-
-
 
       <section class="main-bar">
       <header>
@@ -115,10 +91,58 @@
             <li><a href="#">JavaScript</a></li>
           </ul>
           <div class="action">
-            <button type="submit" class="btn"><p>See project</p></button>
+            <button type="submit" class="btn" onclick="togglePopup()"><p>See project</p></button>
           </div>
         </div>
       </nav>
+
+      <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+          <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <div class="head">
+              <div class="sub-head1"><h1>Tonic</h1></div>
+              <div class="sub-head1">
+                  <p id="font">CANOPY</p>
+                  <img src="./image/Counter.png" alt="counter" />
+                  <h6>Back End Dev</h6>
+                  <img src="./image/Counter.png" alt="counter" />
+                  <h6>2015</h6>
+              </div>
+            </div>
+            <div class="img">
+              <img src="./image/one.png" alt="image">
+            </div>
+            <div class="body">
+              <div class="sub-body1">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
+                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
+                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
+                      adipisci debitis!
+                  </p>
+                  <br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
+                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
+                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
+                      adipisci debitis!
+                  </p>
+              </div>
+              <div class="sub-body2">
+                  <ul>
+                      <li><a href="#">HTML</a></li>
+                      <li><a href="#">CSS</a></li>
+                      <li><a href="#">JavaScript</a></li>
+                      <!-- <li><a href="#">Ruby</a></li> -->
+                      <!-- <li><a href="#">Bootstrap</a></li> -->
+                    </ul>
+                    <div class="action">
+                      <button type="submit" class="btn"><p>See live</p> <i class="fa-solid fa-rotate-right"></i></button>
+                      <button type="submit" class="btn"><p>See Source</p> <i class="fa-brands fa-github"></i></button>
+                    </div>
+              </div>
+            </div>
+          </div>
+      </div>
 
       <nav class="card" id="two">
         <div id="img2"></div>

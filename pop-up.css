@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.popup .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(58, 57, 57, 0.2);
+    backdrop-filter: blur(15px);
+    z-index: 1;
+    display: none;
+}
+
+.popup {
+    justify-content: center;
+    align-items: center;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 750px;
+    height: 870px;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+.popup .close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    color: rgb(48, 45, 45);
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.popup .head {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 10px;
+    top: 8px;
+}
+
+.popup .sub-head1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
+
+.popup .img {
+    width: 100%;
+    padding-top: 55px;
+    text-align: center;
+}
+
+.popup .img img {
+    width: 100%;
+}
+
+.popup .body {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 40px auto auto auto;
+    gap: 15px;
+}
+
+.popup .body .sub-body1 {
+    font-size: 12px;
+    width: 65%;
+}
+
+.popup .body .sub-body2 {
+    width: 35%;
+    gap: 54px;
+}
+
+.sub-body2 ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.sub-body2 ul li a {
+    background: #babff5;
+    padding: 4px 12px 4px 12px;
+    color: #6070ff;
+    font-size: 6px;
+    border-radius: 8px;
+}
+
+.sub-body2 .action {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    gap: 8px;
+}
+
+.sub-body2 .action .btn {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 10px;
+    color: #6070ff;
+    border: 1px solid #6070ff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup.active .overlay {
+    backdrop-filter: blur(5px);
+    display: block;
+}
+
+.popup.active .content {
+    position: absolute;
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .popup .content {
+        width: 40.2rem;
+        height: 800px;
+    }
+    .popup .img img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .popup .content {
+        width: 19rem;
+        height: 640px;
+    }
+
+    .popup .img img {
+        width: 100%;
+    }
+
+    .popup .body {
+        display: flex;
+        flex-direction: column;
+        width: 264px;
+        
+    }
+    .popup .body .sub-body1 {
+        font-size: 10px;
+        width: 100%;
+    }
+    .popup .body .sub-body2 {
+        width: 100%;
+    }
+    .popup.active .content {
+        position: fixed;
+        transition: all 300ms ease-in-out;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    
+}
