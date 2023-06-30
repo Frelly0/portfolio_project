@@ -28,23 +28,23 @@ linkButtons.forEach((linkButton) => {
 //   document.getElementById('popup-4').classList.toggle('active');
 // }
 
-let previewContainer = document.querySelector('.card-preview');
-let previewBox = previewContainer.querySelectorAll('.popup');
+const previewContainer = document.querySelector('.card-preview');
+const previewBox = previewContainer.querySelectorAll('.popup');
 
-document.querySelectorAll('.works .card').forEach(product => {
+document.querySelectorAll('.works .card').forEach((product) => {
   product.onclick = () => {
     previewContainer.style.display = 'flex';
-    let name = product.getAttribute('data-name');
-    previewBox.forEach(preview => {
-      let target = preview.getAttribute('data-target');
-      if(name === target){
+    const name = product.getAttribute('data-name');
+    previewBox.forEach((preview) => {
+      const target = preview.getAttribute('data-target');
+      if (name === target) {
         preview.classList.add('active');
       }
     });
   };
-})
+});
 
-previewBox.forEach(close => {
+previewBox.forEach((close) => {
   close.querySelector('.closebtn').onclick = () => {
     close.classList.remove('active');
     previewContainer.style.display = 'none';
