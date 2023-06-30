@@ -14,3 +14,48 @@ linkButtons.forEach((linkButton) => {
     document.querySelector('.desktop').classList.toggle('show');
   });
 });
+// END OF HAMBURGER MENU
+
+// Form Validation script.js
+const form = document.getElementById('myform');
+const emailInput = document.getElementById('email');
+const errorMessage = document.getElementById('errorMessage');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  const emailValue = emailInput.value;
+  if (emailValue.toLowerCase() === emailValue) {
+    // Email is already in lowercase, form submission is allowed
+    form.submit();
+  } else {
+    // Email is not in lowercase, display error message
+    errorMessage.textContent = 'Email must be in lowercase.';
+    errorMessage.style.display = 'block';
+  }
+});
+
+
+
+let previewContainer = document.querySelector('.card-preview');
+let previewBox = previewContainer.querySelectorAll('.popup');
+
+document.querySelectorAll('.works .card').forEach(product => {
+  product.onclick = () => {
+    previewContainer.style.display = 'flex';
+    let name = product.getAttribute('data-name');
+    previewBox.forEach(preview => {
+      let target = preview.getAttribute('data-target');
+      if(name === target){
+        preview.classList.add('active');
+      }
+    });
+  };
+})
+
+previewBox.forEach(close => {
+  close.querySelector('.closebtn').onclick = () => {
+    close.classList.remove('active');
+    previewContainer.style.display = 'none';
+  };
+});
