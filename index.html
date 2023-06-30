@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
+    <title>Frelly personal portfolio</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./pop-up.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,12 +12,23 @@
   </head>
   <body>
     <div class="container">
- 
+      <div class="menu">
+        <a href="#" class="logo-one">My Logo</a>
+        <div class="menu-top">
+          <ul class="header-content">
+            <li class="head-words"><a class="links" href="#portfolio">Portfolio</a></li>
+            <li class="head-words"><a class="links" href="#about">About</a></li>
+            <li class="head-words"><a class="links" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
       <nav class="nav">
         <a href="#" class="logo"> My Logo </a>
         <nav class="logo-button">
           <img id="nav-button" class="mobile" src="./image/Union.png" alt="logo" width="18px" height="12px"/>
         </nav>
+
         <div class="desktop">
           <ul class="header-content">
             <li class="head-words close mobilee">
@@ -68,7 +79,7 @@
     </section>
 
     <section class="works" id="portfolio">
-      <nav class="card" id="one">
+      <nav class="card" id="one"  data-name="p-1">
         <div id="img1"></div>
         <div class="left-bloks" id="sub-left-block">
           <div class="primary">
@@ -91,60 +102,12 @@
             <li><a href="#">JavaScript</a></li>
           </ul>
           <div class="action">
-            <button type="submit" class="btn" onclick="togglePopup()"><p>See project</p></button>
+            <button type="button" class="btn" onclick="togglePopup()"><p>See project</p></button>
           </div>
         </div>
       </nav>
 
-      <div class="popup" id="popup-1">
-        <div class="overlay"></div>
-          <div class="content">
-            <div class="close-btn" onclick="togglePopup()">&times;</div>
-            <div class="head">
-              <div class="sub-head1"><h1>Tonic</h1></div>
-              <div class="sub-head1">
-                  <p id="font">CANOPY</p>
-                  <img src="./image/Counter.png" alt="counter" />
-                  <h6>Back End Dev</h6>
-                  <img src="./image/Counter.png" alt="counter" />
-                  <h6>2015</h6>
-              </div>
-            </div>
-            <div class="img">
-              <img src="./image/one.png" alt="image">
-            </div>
-            <div class="body">
-              <div class="sub-body1">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
-                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
-                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
-                      adipisci debitis!
-                  </p>
-                  <br>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
-                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
-                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
-                      adipisci debitis!
-                  </p>
-              </div>
-              <div class="sub-body2">
-                  <ul>
-                      <li><a href="#">HTML</a></li>
-                      <li><a href="#">CSS</a></li>
-                      <li><a href="#">JavaScript</a></li>
-                      <!-- <li><a href="#">Ruby</a></li> -->
-                      <!-- <li><a href="#">Bootstrap</a></li> -->
-                    </ul>
-                    <div class="action">
-                      <button type="submit" class="btn"><p>See live</p> <i class="fa-solid fa-rotate-right"></i></button>
-                      <button type="submit" class="btn"><p>See Source</p> <i class="fa-brands fa-github"></i></button>
-                    </div>
-              </div>
-            </div>
-          </div>
-      </div>
-
-      <nav class="card" id="two">
+      <nav class="card" id="two" data-name="p-2">
         <div id="img2"></div>
         <div class="left-bloks"  id="sub-left-block">
           <div class="primary">
@@ -168,12 +131,12 @@
             <li><a href="#">JavaScript</a></li>
           </ul>
           <div class="action">
-            <button type="submit" class="btn"><p>See project</p></button>
+            <button type="submit" class="btn" onclick="togglePopup()"><p>See project</p></button>
           </div>
         </div>
       </nav>
 
-      <nav class="card" id="three">
+      <nav class="card" id="three" data-name="p-3">
         <div id="img3"></div>
         <div class="left-bloks" id="sub-left-block">
           <div class="primary">
@@ -197,12 +160,12 @@
             <li><a href="#">JavaScript</a></li>
           </ul>
           <div class="action">
-            <button type="submit" class="btn" id="buto"><p>See project</p></button>
+            <button type="submit" class="btn" id="buto" onclick="togglePopup()"><p>See project</p></button>
           </div>
         </div>
       </nav>
 
-      <nav class="card" id="four">
+      <nav class="card" id="four" data-name="p-4">
         <div id="img4"></div>
         <div class="left-bloks" id="sub-left-block">
           <div class="primary">
@@ -226,11 +189,208 @@
             <li><a href="#">JavaScript</a></li>
           </ul>
           <div class="action">
-            <button type="submit" class="btn"><p>See project</p></button>
+            <button type="submit" class="btn" onclick="togglePopup()"><p>See project</p></button>
           </div>
         </div>
       </nav>
     </section>
+
+    <div class="card-preview">
+
+      <div class="popup" id="popup-1" data-target="p-1">
+        <div class="overlay"></div>
+          <div class="content">
+            <div class="closebtn" onclick="togglePopup()">&times;</div>
+            <div class="head">
+              <div class="sub-head1"><h1>Tonic</h1></div>
+              <div class="sub-head1">
+                  <p id="font">CANOPY</p>
+                  <img src="./image/Counter.png" alt="counter" />
+                  <h6>Back End Dev</h6>
+                  <img src="./image/Counter.png" alt="counter" />
+                  <h6>2015</h6>
+              </div>
+            </div>
+            <div class="img">
+              <img src="./image/one.png" alt="image" height="300">
+            </div>
+            <div class="body">
+              <div class="sub-body1">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
+                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
+                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
+                      adipisci debitis!
+                  </p>
+                  <br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
+                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
+                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
+                      adipisci debitis!
+                  </p>
+              </div>
+              <div class="sub-body2">
+                  <ul>
+                      <li><a href="#">HTML</a></li>
+                      <li><a href="#">css</a></li>
+                      <li><a href="#">JavaScript</a></li>
+                    </ul>
+                    <div class="action">
+                     
+                        <a href="https://frelly0.github.io/portfolio_project/" class="btn"><p>See live</p> <i class="fa-solid fa-rotate-right"></i></a>
+                        <a href="https://github.com/Frelly0" class="btn"><p>See Source</p> <i class="fa-brands fa-github"></i></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  
+      <div class="popup" id="popup-2" data-target="p-2">
+        <div class="overlay"></div>
+          <div class="content">
+            <div class="closebtn" onclick="togglePopup()">&times;</div>
+            <div class="head">
+              <div class="sub-head1"><h1>Multi-Post Stories</h1></div>
+              <div class="sub-head1">
+                  <p id="font">FACEBOOK</p>
+                  <img src="./image/Counter.png" alt="counter" />
+                  <h6>Back End Dev</h6>
+                  <img src="./image/Counter.png" alt="counter" />
+                  <h6>2015</h6>
+              </div>
+            </div>
+            <div class="img">
+              <img src="./image/two.png" alt="image" height="300">
+            </div>
+            <div class="body">
+              <div class="sub-body1">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
+                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
+                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
+                      adipisci debitis!
+                  </p>
+                  <br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
+                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
+                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
+                      adipisci debitis!
+                  </p>
+              </div>
+              <div class="sub-body2">
+                  <ul>
+                      <li><a href="#">HTML</a></li>
+                      <li><a href="#">Ruby on rails</a></li>
+                      <li><a href="#">css</a></li>
+                      <li><a href="#">JavaScript</a></li>
+                    </ul>
+                    <div class="action">
+                      
+                        <a href="https://frelly0.github.io/portfolio_project/" class="btn"><p>See live</p> <i class="fa-solid fa-rotate-right"></i></a>
+                        <a href="https://github.com/Frelly0" class="btn"><p>See Source</p> <i class="fa-brands fa-github"></i></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  
+      <div class="popup" id="popup-3" data-target="p-3">
+        <div class="overlay"></div>
+          <div class="content">
+            <div class="closebtn" onclick="togglePopup()">&times;</div>
+            <div class="head">
+              <div class="sub-head1"><h1>Facebook 360</h1></div>
+              <div class="sub-head1">
+                  <p id="font">FACEBOOK</p>
+                  <img src="./image/Counter.png" alt="counter" />
+                  <h6>Back End Dev</h6>
+                  <img src="./image/Counter.png" alt="counter" />
+                  <h6>2015</h6>
+              </div>
+            </div>
+            <div class="img">
+              <img src="./image/three.png" alt="image" height="300">
+            </div>
+            <div class="body">
+              <div class="sub-body1">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
+                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
+                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
+                      adipisci debitis!
+                  </p>
+                  <br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
+                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
+                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
+                      adipisci debitis!
+                  </p>
+              </div>
+              <div class="sub-body2">
+                  <ul>
+                      <li><a href="#">HTML</a></li>
+                      <li><a href="#">Ruby on rails</a></li>
+                      <li><a href="#">css</a></li>
+                      <li><a href="#">JavaScript</a></li>
+                    </ul>
+                    <div class="action">
+                      
+                        <a href="https://frelly0.github.io/portfolio_project/" class="btn"><p>See live</p> <i class="fa-solid fa-rotate-right"></i></a>
+                        <a href="https://github.com/Frelly0" class="btn"><p>See Source</p> <i class="fa-brands fa-github"></i></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  
+      <div class="popup" id="popup-4" data-target="p-4">
+        <div class="overlay"></div>
+          <div class="content">
+            <div class="closebtn" onclick="togglePopup()">&times;</div>
+            <div class="head">
+              <div class="sub-head1"><h1>Uber Navigation</h1></div>
+              <div class="sub-head1">
+                  <p id="font">Uber</p>
+                  <img src="./image/Counter.png" alt="counter" />
+                  <h6>Lead develop</h6>
+                  <img src="./image/Counter.png" alt="counter" />
+                  <h6>2015</h6>
+              </div>
+            </div>
+            <div class="img">
+              <img src="./image/four.png" alt="image" height="300">
+            </div>
+            <div class="body">
+              <div class="sub-body1">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
+                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
+                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
+                      adipisci debitis!
+                  </p>
+                  <br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
+                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
+                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
+                      adipisci debitis!
+                  </p>
+              </div>
+              <div class="sub-body2">
+                  <ul>
+                      <li><a href="#">HTML</a></li>
+                      <li><a href="#">Ruby on rails</a></li>
+                      <li><a href="#">css</a></li>
+                      <li><a href="#">JavaScript</a></li>
+                    </ul>
+                    <div class="action">
+                        <a href="https://frelly0.github.io/portfolio_project/" class="btn"><p>See live</p> <i class="fa-solid fa-rotate-right"></i></a>
+                        <a href="https://github.com/Frelly0" class="btn"><p>See Source</p> <i class="fa-brands fa-github"></i></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+
+
 
     <section class="about" id="about">
       <div class="left">
@@ -347,6 +507,7 @@
       </div>
     </section>
 
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
+
   </body>
 </html>

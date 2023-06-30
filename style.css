@@ -14,7 +14,7 @@ body {
 }
 
 .nav {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   min-width: 375px;
@@ -24,6 +24,7 @@ body {
 }
 
 .logo {
+  display: none;
   color: #6070ff;
   font-style: normal;
   font-weight: 700;
@@ -41,25 +42,43 @@ body {
   display: block;
 }
 
-.desktop {
-  display: none;
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 100px 15px 100px;
 }
 
-.desktop.show {
+.menu .logo-one {
+  font-size: 25px;
+  color: #172b4d;
+  font-weight: 600;
+}
+
+header section ul {
   display: flex;
-  padding-top: 20px;
-  padding-left: 15px;
-  position: fixed;
-  background-color: rgb(96, 112, 255, 0.8);
-  backdrop-filter: blur(5px);
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  text-decoration: none;
-  color: #fff;
-  transition: 0.3s ease;
-  z-index: 20;
+  gap: 15px;
+}
+
+.menu-top ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.card ul a {
+  background-color: #ebebff;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 8px;
+}
+
+.menu-top ul li a {
+  color: rgb(87, 95, 216);
 }
 
 .header-content {
@@ -131,23 +150,9 @@ header section h1 {
   animation: mymove 5s infinite;
 }
 
-header section ul {
-  display: flex;
-  gap: 15px;
-}
-
 .sub-menu ul {
   display: flex;
   gap: 20px;
-}
-
-.card ul a {
-  background-color: #ebebff;
-  padding: 5px;
-  border-radius: 5px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 8px;
 }
 
 .sub-menu ul li a {
@@ -215,7 +220,7 @@ header {
 
 .about .left h2 {
   font-weight: 700;
-  font-size: 37px;
+  font-size: 38px;
   line-height: 52px;
   display: flex;
   align-items: center;
@@ -707,6 +712,26 @@ input[type="submit"]:focus {
     z-index: 10;
   }
 
+  .menu {
+    display: none;
+  }
+
+  .logo-one {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .menu-top {
+    display: none;
+  }
+
   header {
     display: flex;
     background-image: url(./image/backgroundimg.png);
@@ -803,6 +828,18 @@ input[type="submit"]:focus {
     display: block;
   }
 
+  .menu {
+    display: none;
+  }
+
+  .logo-one {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+  }
+
   .logo-button {
     display: flex;
     flex-direction: row;
@@ -812,6 +849,32 @@ input[type="submit"]:focus {
     right: 24px;
     border-radius: 8px;
     cursor: pointer;
+  }
+
+  .nav .logo-button {
+    top: 27px;
+    align-items: center;
+  }
+
+  .menu-top {
+    display: none;
+  }
+
+  .desktop.show {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 15px;
+    position: fixed;
+    background-color: rgb(96, 112, 255, 0.8);
+    backdrop-filter: blur(5px);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    z-index: 20;
   }
 
   .main-bar nav {
