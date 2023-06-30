@@ -14,19 +14,28 @@ linkButtons.forEach((linkButton) => {
     document.querySelector('.desktop').classList.toggle('show');
   });
 });
+// END OF HAMBURGER MENU
 
-// function togglePopup() {
-//   document.getElementById('popup-1').classList.toggle('active');
-// }
-// function togglePopup() {
-//   document.getElementById('popup-2').classList.toggle('active');
-// }
-// function togglePopup() {
-//   document.getElementById('popup-3').classList.toggle('active');
-// }
-// function togglePopup() {
-//   document.getElementById('popup-4').classList.toggle('active');
-// }
+// Form Validation script.js
+const form = document.getElementById('myform');
+const emailInput = document.getElementById('email');
+const errorMessage = document.getElementById('errorMessage');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  const emailValue = emailInput.value;
+  if (emailValue.toLowerCase() === emailValue) {
+    // Email is already in lowercase, form submission is allowed
+    form.submit();
+  } else {
+    // Email is not in lowercase, display error message
+    errorMessage.textContent = 'Email must be in lowercase.';
+    errorMessage.style.display = 'block';
+  }
+});
+
+
 
 let previewContainer = document.querySelector('.card-preview');
 let previewBox = previewContainer.querySelectorAll('.popup');
