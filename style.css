@@ -386,7 +386,7 @@ header section p {
 .card #img1 {
   width: 600px;
   height: 320px;
-  background-image: url(./image/one.png);
+  
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
