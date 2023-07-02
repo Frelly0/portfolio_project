@@ -79,35 +79,7 @@
     </section>
 
     <section class="works" id="portfolio">
-      <nav class="card" id="one"  data-name="p-1">
-        <div id="img1"></div>
-        <div class="left-bloks" id="sub-left-block">
-          <div class="primary">
-            <h1>Tonic</h1>
-            <div class="frame">
-              <p id="font">CANOPY</p>
-              <img src="./image/Counter.png" alt="counter" />
-              <h6>Back End Dev</h6>
-              <img src="./image/Counter.png" alt="counter" />
-              <h6>2015</h6>
-            </div>
-          </div>
-          <p class="text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul>
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">JavaScript</a></li>
-          </ul>
-          <div class="action">
-            <button type="button" class="btn" onclick="togglePopup()"><p>See project</p></button>
-          </div>
-        </div>
-      </nav>
-
-      <nav class="card" id="two" data-name="p-2">
+      <!-- <nav class="card" id="two" data-name="p-2">
         <div id="img2"></div>
         <div class="left-bloks"  id="sub-left-block">
           <div class="primary">
@@ -192,19 +164,18 @@
             <button type="submit" class="btn" onclick="togglePopup()"><p>See project</p></button>
           </div>
         </div>
-      </nav>
+      </nav> -->
     </section>
 
     <div class="card-preview">
-
       <div class="popup" id="popup-1" data-target="p-1">
         <div class="overlay"></div>
           <div class="content">
             <div class="closebtn" onclick="togglePopup()">&times;</div>
             <div class="head">
-              <div class="sub-head1"><h1>Tonic</h1></div>
+              <div class="sub-head1"><h1 class="main-project-title">Tonic</h1></div>
               <div class="sub-head1">
-                  <p id="font">CANOPY</p>
+                  <p id="font" class="project-title"></p>
                   <img src="./image/Counter.png" alt="counter" />
                   <h6>Back End Dev</h6>
                   <img src="./image/Counter.png" alt="counter" />
@@ -212,7 +183,7 @@
               </div>
             </div>
             <div class="img">
-              <img src="./image/one.png" alt="image" height="300">
+              <img class="pop-image" src="./image/one.png" alt="image" height="300">
             </div>
             <div class="body">
               <div class="sub-body1">
@@ -243,150 +214,6 @@
             </div>
           </div>
       </div>
-  
-      <div class="popup" id="popup-2" data-target="p-2">
-        <div class="overlay"></div>
-          <div class="content">
-            <div class="closebtn" onclick="togglePopup()">&times;</div>
-            <div class="head">
-              <div class="sub-head1"><h1>Multi-Post Stories</h1></div>
-              <div class="sub-head1">
-                  <p id="font">FACEBOOK</p>
-                  <img src="./image/Counter.png" alt="counter" />
-                  <h6>Back End Dev</h6>
-                  <img src="./image/Counter.png" alt="counter" />
-                  <h6>2015</h6>
-              </div>
-            </div>
-            <div class="img">
-              <img src="./image/two.png" alt="image" height="300">
-            </div>
-            <div class="body">
-              <div class="sub-body1">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
-                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
-                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
-                      adipisci debitis!
-                  </p>
-                  <br>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
-                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
-                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
-                      adipisci debitis!
-                  </p>
-              </div>
-              <div class="sub-body2">
-                  <ul>
-                      <li><a href="#">HTML</a></li>
-                      <li><a href="#">Ruby on rails</a></li>
-                      <li><a href="#">css</a></li>
-                      <li><a href="#">JavaScript</a></li>
-                    </ul>
-                    <div class="action">
-                      
-                        <a href="https://frelly0.github.io/portfolio_project/" class="btn"><p>See live</p> <i class="fa-solid fa-rotate-right"></i></a>
-                        <a href="https://github.com/Frelly0" class="btn"><p>See Source</p> <i class="fa-brands fa-github"></i></a>
-                    </div>
-              </div>
-            </div>
-          </div>
-      </div>
-  
-      <div class="popup" id="popup-3" data-target="p-3">
-        <div class="overlay"></div>
-          <div class="content">
-            <div class="closebtn" onclick="togglePopup()">&times;</div>
-            <div class="head">
-              <div class="sub-head1"><h1>Facebook 360</h1></div>
-              <div class="sub-head1">
-                  <p id="font">FACEBOOK</p>
-                  <img src="./image/Counter.png" alt="counter" />
-                  <h6>Back End Dev</h6>
-                  <img src="./image/Counter.png" alt="counter" />
-                  <h6>2015</h6>
-              </div>
-            </div>
-            <div class="img">
-              <img src="./image/three.png" alt="image" height="300">
-            </div>
-            <div class="body">
-              <div class="sub-body1">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
-                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
-                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
-                      adipisci debitis!
-                  </p>
-                  <br>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
-                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
-                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
-                      adipisci debitis!
-                  </p>
-              </div>
-              <div class="sub-body2">
-                  <ul>
-                      <li><a href="#">HTML</a></li>
-                      <li><a href="#">Ruby on rails</a></li>
-                      <li><a href="#">css</a></li>
-                      <li><a href="#">JavaScript</a></li>
-                    </ul>
-                    <div class="action">
-                      
-                        <a href="https://frelly0.github.io/portfolio_project/" class="btn"><p>See live</p> <i class="fa-solid fa-rotate-right"></i></a>
-                        <a href="https://github.com/Frelly0" class="btn"><p>See Source</p> <i class="fa-brands fa-github"></i></a>
-                    </div>
-              </div>
-            </div>
-          </div>
-      </div>
-  
-      <div class="popup" id="popup-4" data-target="p-4">
-        <div class="overlay"></div>
-          <div class="content">
-            <div class="closebtn" onclick="togglePopup()">&times;</div>
-            <div class="head">
-              <div class="sub-head1"><h1>Uber Navigation</h1></div>
-              <div class="sub-head1">
-                  <p id="font">Uber</p>
-                  <img src="./image/Counter.png" alt="counter" />
-                  <h6>Lead develop</h6>
-                  <img src="./image/Counter.png" alt="counter" />
-                  <h6>2015</h6>
-              </div>
-            </div>
-            <div class="img">
-              <img src="./image/four.png" alt="image" height="300">
-            </div>
-            <div class="body">
-              <div class="sub-body1">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
-                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
-                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
-                      adipisci debitis!
-                  </p>
-                  <br>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam 
-                      omnis assumenda natus beatae quaerat enim perspiciatis cum, amet totam 
-                      recusandae ullam debitis, reprehenderit asperiores minus fugiat. Beatae, 
-                      adipisci debitis!
-                  </p>
-              </div>
-              <div class="sub-body2">
-                  <ul>
-                      <li><a href="#">HTML</a></li>
-                      <li><a href="#">Ruby on rails</a></li>
-                      <li><a href="#">css</a></li>
-                      <li><a href="#">JavaScript</a></li>
-                    </ul>
-                    <div class="action">
-                        <a href="https://frelly0.github.io/portfolio_project/" class="btn"><p>See live</p> <i class="fa-solid fa-rotate-right"></i></a>
-                        <a href="https://github.com/Frelly0" class="btn"><p>See Source</p> <i class="fa-brands fa-github"></i></a>
-                    </div>
-              </div>
-            </div>
-          </div>
-      </div>
-
     </div>
 
 
